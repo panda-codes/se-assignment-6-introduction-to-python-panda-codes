@@ -1,0 +1,125 @@
+1. Python Basics:
+   - What is Python, and what are some of its key features that make it popular among developers? Provide examples of use cases where Python is particularly effective.
+
+Answer:
+Python: A high-level, interpreted programming language known for its readability and simplicity.
+Key Features: Dynamic typing, extensive standard library, and large community support.
+Use Cases: Web development (Django), data analysis (Pandas), machine learning (TensorFlow).
+
+
+2. Installing Python:
+   - Describe the steps to install Python on your operating system (Windows, macOS, or Linux). Include how to verify the installation and set up a virtual environment.
+
+Answer:
+Windows: Download from the official website, run the installer, and check "Add Python to PATH".
+Verify Installation: Run python --version in the terminal.
+Virtual Environment:
+python -m venv myenv
+myenv\Scripts\activate
+
+
+3. Python Syntax and Semantics:
+   - Write a simple Python program that prints "Hello, World!" to the console. Explain the basic syntax elements used in the program.
+
+Answer:
+Program: print("Hello, World!")
+Syntax Elements: print function for output, double quotes for string literals.
+
+
+4. Data Types and Variables:
+   - List and describe the basic data types in Python. Write a short script that demonstrates how to create and use variables of different data types.
+
+Answer:
+Basic Data Types: int, float, str, bool, list, tuple, dict, set.
+Script:
+x = 10        # int
+y = 3.14      # float
+name = "Alice"  # str
+is_active = True  # bool
+
+print(x, y, name, is_active)
+
+
+5. Control Structures:
+   - Explain the use of conditional statements and loops in Python. Provide examples of an `if-else` statement and a `for` loop.
+
+Answer:
+Conditional Statements:
+age = 20
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+Loops:
+for i in range(5):
+    print(i)
+
+
+6. Functions in Python:
+   - What are functions in Python, and why are they useful? Write a Python function that takes two arguments and returns their sum. Include an example of how to call this function.
+
+Answer:
+Functions: Blocks of reusable code that perform a specific task.
+Example:
+def add(a,b):
+    return a + b
+
+result = add(5,3)
+print(result)
+
+
+7. Lists and Dictionaries:
+   - Describe the differences between lists and dictionaries in Python. Write a script that creates a list of numbers and a dictionary with some key-value pairs, then demonstrates basic operations on both.
+
+Answer:
+Lists: Ordered, mutable collections.
+Dictionaries: Unordered, mutable collections with key-value pairs.
+Script:
+numbers = [1, 2, 3, 4]
+info = {"name": "Alice", "age": 25}
+
+numbers.append(5)
+info["city"] = "Wonderland"
+
+print(numbers)
+print(info)
+
+
+8. Exception Handling:
+   - What is exception handling in Python? Provide an example of how to use `try`, `except`, and `finally` blocks to handle errors in a Python script.
+
+Answer:
+Exception Handling: Managing errors to prevent crashes.
+Example:
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+finally:
+    print("Execution completed")
+
+
+9. Modules and Packages:
+   - Explain the concepts of modules and packages in Python. How can you import and use a module in your script? Provide an example using the `math` module.
+
+Answer:
+Modules: Files containing Python code.
+Packages: Directories containing multiple modules.
+Import Example:
+import math
+
+print(math.sqrt(16))
+
+10. File I/O:
+    - How do you read from and write to files in Python? Write a script that reads the content of a file and prints it to the console, and another script that writes a list of strings to a file.
+
+ Answer:
+Read from File:
+with open('example.txt', 'r') as file:
+    content = file.read()
+    print(content)
+Write to File:
+lines = ["First line", "Second line"]
+with open('output.txt', 'w') as file:
+    for line in lines:
+        file.write(line + "\n")
